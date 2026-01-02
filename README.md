@@ -9,7 +9,7 @@ Dataset:
 Briefly mention the source (Y Combinator's Hacker News) and that it contains ~20,000 rows.
 Technologies Used:
 Language: Python 3.x
-Modules: csv (data parsing), datetime (time-series manipulation).
+Modules: csv (data parsing), datetime (time-series manipulation), matplotlib (visualize data).
 Key Findings:
 Example: "Ask HN" posts created at 15:00 (3 PM EST) receive the highest average number of comments.
 How to Run:
