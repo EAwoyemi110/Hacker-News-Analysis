@@ -16,6 +16,9 @@ chance of starting a real conversation.
 '''
 import csv
 import datetime as dt
+import matplotlib.pyplot as plt
+
+
 with open("hacker_news.csv", "r") as f:
     reader = csv.reader(f)
     hn = list(reader)
@@ -133,6 +136,22 @@ for avg, hour in sorted_swap[:5]:
     print(f"{formatted_hour}: {avg:.2f} average comments per post")
 
 print("Conclusion: 15:00 is the best time to ask a question on the forum.")
+
+#plot data on graph
+# Sort hours numerically so the x-axis is in time order
+avg_by_hour_sorted = sorted(avg_by_hour, key=lambda x: int(x[0]))
+
+hours = [hour for hour, avg in avg_by_hour_sorted]
+avg_comments = [avg for hour, avg in avg_by_hour_sorted]
+
+plt.figure()
+plt.bar(hours, avg_comments)
+plt.xlabel("Hour of Day (24-hour format)")
+plt.ylabel("Average Number of Comments")
+plt.title("Average Number of Comments on Ask HN Posts by Hour")
+
+plt.show()
+
 
 print("Analysis done by Emmanuel Awoyemi")
 
