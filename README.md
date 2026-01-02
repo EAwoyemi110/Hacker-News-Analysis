@@ -1,20 +1,47 @@
-# Hacker-News-Analysis
-Analyzing Hacker News data with Python to see what actually drives post engagement. By processing 20,000+ posts using csv and datetime modules, I compared "Ask HN" vs. "Show HN" performance and tracked how submission timing affects comments. It’s a practical look at using data to find the "sweet spot" for reaching the tech community.
+Hacker News Engagement Analysis
 
-Project Title: Hacker News Engagement Analysis
-Key Questions:
-Do "Ask HN" or "Show HN" posts receive more comments on average?
-Does the time of day affect the number of comments a post receives?
-Dataset:
-Briefly mention the source (Y Combinator's Hacker News) and that it contains ~20,000 rows.
+Project Overview
 
+Analyzed Hacker News data using Python to understand what drives post engagement.
 
-Technologies Used:
+Processed 20,000+ posts using the csv and datetime modules.
+
+Compared “Ask HN” vs. “Show HN” performance.
+
+Examined how submission time affects the number of comments.
+
+Goal: find the “sweet spot” for reaching and engaging the tech community.
+
+Key Questions
+
+Do “Ask HN” or “Show HN” posts receive more comments on average?
+
+Does the time of day a post is submitted affect comment count?
+
+Dataset
+
+Source: Y Combinator’s Hacker News
+
+Size: approximately 20,000 rows
+
+Technologies Used
+
 Language: Python 3.x
-Modules: csv (data parsing), datetime (time-series manipulation), matplotlib (visualize data).
 
+Modules:
 
-Key Findings:
-Example: "Ask HN" posts created at 15:00 (3 PM EST) receive the highest average number of comments.
-How to Run:
-Include a short instruction like: python hacker_news.py. 
+csv – data parsing
+
+datetime – time-series manipulation
+
+matplotlib – data visualization
+
+Key Findings
+
+“Ask HN” posts submitted at 15:00 (3 PM EST) receive the highest average number of comments.
+
+How to Run
+
+Run the script from the command line:
+
+python hacker_news.py
